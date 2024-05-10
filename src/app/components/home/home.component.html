@@ -1,2 +1,203 @@
 <app-header />
-<p>dddddddddd</p>
+<main class="h-full w-full">
+   <section
+      class="flex flex-col px-[100px] items-center h-screen justify-between relative pt-[220px] w-full"
+   >
+      <div class="flex flex-col gap-10 z-30 items-center">
+         <h1 class="text-5xl font-bold leading-">
+            Adote um amigo peludo hoje mesmo!
+         </h1>
+         <div class="flex gap-4">
+            <app-button
+               title="quero adotar"
+               variant="primary"
+               textTransform="uppercase"
+            />
+            <app-button
+               title="saiba mais"
+               variant="secondary"
+               textTransform="uppercase"
+            />
+         </div>
+      </div>
+
+      <div class="absolute bottom-0 flex">
+         <img
+            src="assets/dog.png"
+            width="50%"
+         />
+         <img
+            src="assets/cat.png"
+            width="50%"
+         />
+      </div>
+   </section>
+
+   <section
+      class="bg-purple-100 h-full px-[100px] py-[80px] flex flex-col items-center gap-12 w-full"
+   >
+      <h1 class="font-bold text-5xl">Entenda como funciona</h1>
+      <div class="flex gap-10">
+         <card-information
+            img-path="assets/icon-dog.png"
+            title="Escolha seu pet"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptate corporis doloremque blanditiis minus quae, nisi facilis earum 
+             quod perferendis nemo reiciendis iusto numquam, voluptatem aliquid, 
+             sunt iste ullam provident similique?"
+         />
+         <card-information
+            img-path="assets/icon-dog.png"
+            title="Preencha o formulário"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptate corporis doloremque blanditiis minus quae, nisi facilis earum 
+             quod perferendis nemo reiciendis iusto numquam, voluptatem aliquid, 
+             sunt iste ullam provident similique?"
+         />
+         <card-information
+            img-path="assets/icon-dog.png"
+            title="Avaliação"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptate corporis doloremque blanditiis minus quae, nisi facilis earum 
+             quod perferendis nemo reiciendis iusto numquam, voluptatem aliquid, 
+             sunt iste ullam provident similique?"
+         />
+         <card-information
+            img-path="assets/icon-dog.png"
+            title="Pode buscar seu pet"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptate corporis doloremque blanditiis minus quae, nisi facilis earum 
+             quod perferendis nemo reiciendis iusto numquam, voluptatem aliquid, 
+             sunt iste ullam provident similique?"
+         />
+      </div>
+      <p class="text-xl">
+         Ainda ficou com duvidas? Saiba mais
+         <a
+            href=""
+            class="text-blue-500 underline"
+            >clicando aqui</a
+         >
+      </p>
+   </section>
+
+   <section class="w-full flex flex-col items-center py-16 gap-12">
+      <h1 class="text-5xl font-bold text-purple-800">
+         Pets em busca de um novo lar
+      </h1>
+      <div>
+         <div class="flex items-center justify-center gap-10 mb-10">
+            <card-pet
+               path="https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+               name="Dolly"
+               age="2 anos"
+               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Iure culpa maiores, laborum soluta magni molestiae quos modi laudantium 
+               ducimus praesentium, "
+            />
+            <card-pet
+               path="https://midias.correiobraziliense.com.br/_midias/jpg/2024/01/01/675x450/1_cachorro_maltes-33853737.jpg"
+               name="Priscilla"
+               age="4 anos"
+               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Iure culpa maiores, laborum soluta magni molestiae quos modi laudantium 
+               ducimus praesentium, "
+            />
+            <card-pet
+               path="https://conteudo.imguol.com.br/c/bichos/80/2020/09/25/sansa-e-uma-gata-que-foi-abandonada-mas-conseguiu-ser-adotada-e-hoje-bomba-no-instagram-1601056796152_v2_450x600.jpg"
+               name="Luka"
+               age="5 anos"
+               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Iure culpa maiores, laborum soluta magni molestiae quos modi laudantium 
+               ducimus praesentium, "
+            />
+         </div>
+         <div class="flex items-center justify-center gap-10">
+            <card-pet
+               path="https://blog.casadoprodutor.com.br/wp-content/uploads/2017/11/coelho.jpg"
+               name="Murilo"
+               age="1 ano"
+               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Iure culpa maiores, laborum soluta magni molestiae quos modi laudantium 
+               ducimus praesentium, "
+            />
+            <card-pet
+               path="https://www.revistapetcenter.com.br/wp-content/uploads/2023/10/Calopsitas_Pet_Center_251.jpg"
+               name="Ruan"
+               age="6 anos"
+               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Iure culpa maiores, laborum soluta magni molestiae quos modi laudantium 
+               ducimus praesentium, "
+            />
+            <card-pet
+               path="https://portalmelhoresamigos.com.br/wp-content/uploads/2016/04/hamster_roedor_comportamento.png"
+               name="Sid"
+               age="2 anos"
+               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Iure culpa maiores, laborum soluta magni molestiae quos modi laudantium 
+               ducimus praesentium, "
+            />
+         </div>
+      </div>
+      <app-button
+         title="Ver mais"
+         variant="secondary"
+         textTransform="uppercase"
+      />
+   </section>
+
+   <section class="h-full flex flex-col items-center">
+      <div
+         class="bg-purple-100 h-[50%] w-[50%] rounded-2xl flex flex-col items-center justify-center py-10 gap-5"
+      >
+         <img
+            src="assets/pow.svg"
+            width="50"
+         />
+         <h1 class="text-3xl text-center font-bold">Sobre a Amigo Peludo</h1>
+         <p class="text-center px-11">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            consectetur architecto delectus possimus facere incidunt
+            consequuntur corporis quod tempora excepturi deserunt vitae corrupti
+            eum distinctio dolor est, eius, tempore iusto?
+         </p>
+      </div>
+   </section>
+
+   <section class="w-full flex flex-col items-center gap-6 py-28">
+      <h1 class="text-4xl font-bold">Ficou com duvidas?</h1>
+      <p class="text-center">
+         Acesse a area de perguntas frequentes e tire as suas<br />
+         duvidas sobre adoção, doação, eventos e outros.
+      </p>
+      <app-button title="Perguntas frequentes" />
+   </section>
+
+   <section
+      class="w-full bg-purple-800 h-80 flex justify-around items-center relative"
+   >
+      <div>
+         <img
+            src="assets/logo2.svg"
+            width="100"
+         />
+      </div>
+      <div class="flex gap-9 text-white">
+         <div class="flex flex-col">
+            <span class="font-bold text-lg">Como ajudar?</span>
+            <a href="">Quero adotar</a>
+            <a href="">Quero doar</a>
+            <a href="">ONGs/Protetores</a>
+         </div>
+         <div class="flex flex-col">
+            <span class="font-bold text-lg">Contatos</span>
+            <span>(43) 99999-9999</span>
+            <span>Santa Maria, Curitiba - PR</span>
+         </div>
+      </div>
+
+      <p class="absolute bottom-3 z-50 text-sm text-white">
+         © 2024 Powered by Amigo Peludo. Todos os direitos reservados.
+      </p>
+   </section>
+</main>

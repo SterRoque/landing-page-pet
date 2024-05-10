@@ -1,0 +1,24 @@
+<div class="rounded-xl w-[320px] shadow-lg">
+   <!-- <img
+      [src]="path"
+      alt=""
+      width="500"
+      class="rounded-t-xl"
+   /> -->
+   <div
+      class="w-full h-[250px] bg-cover bg-no-repeat rounded-t-xl bg-center"
+      style="background-image: url('{{ path }}')"
+   ></div>
+   <div class="px-8 py-4 flex flex-col gap-4">
+      <div>
+         <h3 class="font-bold text-xl text-purple-800">{{ name }}</h3>
+         <span class="font-medium text-gray-700">{{ age }}</span>
+      </div>
+
+      <p class="text-sm">{{ description }}</p>
+
+      <div>
+         <app-button title="Adotar" />
+      </div>
+   </div>
+</div>
